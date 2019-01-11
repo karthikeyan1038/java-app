@@ -1,5 +1,5 @@
 pipeline {
-	agent any
+	agent {label 'gayathiri'}
 	stages {
         stage ('checkout') {
             steps {
@@ -11,5 +11,10 @@ pipeline {
                 sh '${m2_home}/bin/mvn -f java-sample-app/pom.xml clean install' 
             }
         }
+		stage('move') {
+			steps {
+			 sh 'mv /home/zippyops/jenkins/java-app/simple-java-app/target/*.war /etc/puppetlabs/code/environment/production/modules'
     }
+}
+	}
 }
