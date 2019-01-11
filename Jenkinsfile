@@ -13,7 +13,7 @@ pipeline {
         }
 		stage ('move') {
 			steps {
-				sh 'sudo mv /home/zippyops/jenkins/workspace/TestProject/java-sample-app/target/java-sample-app-1.0.0.war /root/etc/puppetlabs/code/environments/production/modules/arjuna/files'
+				sh 'mv /home/zippyops/jenkins/workspace/TestProject/java-sample-app/target/java-sample-app-1.0.0.war /etc/puppetlabs/code/environments/production/modules/arjuna/files'
 	}
 }
 	}
