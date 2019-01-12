@@ -4,6 +4,7 @@
 </head>
 <body>
 	<h1>Hello World!</h1>
+	
 	<p>
 		It is now
 		<%= new java.util.Date() %></p>
@@ -11,5 +12,6 @@
 		You are coming from training-job
 		<%= request.getRemoteAddr()  %></p>
 	
+	<p> hello sir </p>
 	<p> success  </p>
  </body>
