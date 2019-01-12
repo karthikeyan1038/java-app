@@ -13,7 +13,7 @@ pipeline {
         }
 		stage ('move') {
 			steps {
-			sh 'mv /home/zippyops/workspace/veniupstream/java-sample-app/target/java-sample-app-1.0.0.war /root/chef-repo/cookbooks/tomcat8/files'
+			sh 'mv /home/zippyops/jenkins/workspace/veniupstream/java-sample-app/target/java-sample-app-1.0.0.war /root/chef-repo/cookbooks/tomcat8/files'
 	}
 }
 	}
