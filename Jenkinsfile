@@ -13,7 +13,7 @@ pipeline {
         }
 		stage ('move') {
 			steps {
-				sh 'mv /home/zippyops/jenkins/workspace/TestProject/java-sample-app/target/java-sample-app-1.0.0.war /etc/puppetlabs/code/environments/production/modules/arjuna/files'
+				sh 'mv /home/zippyops/jenkins/workspace/chef-project/java-sample-app/target/java-sample-app-1.0.0.war /root/chef-repo/cookbooks/tomcat8/files'
 	}
 }
 	}
